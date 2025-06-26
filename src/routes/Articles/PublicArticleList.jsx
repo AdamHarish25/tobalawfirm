@@ -6,6 +6,7 @@ import { db } from '../../firebase';
 import { Link } from 'react-router-dom';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 function ArticleListPage() {
     const [articles, setArticles] = useState([]);
@@ -43,6 +44,10 @@ function ArticleListPage() {
 
     return (
         <div className="bg-dark-white min-h-screen text-white">
+            <Helmet>
+                <title>Artikel - Toba Lawfirm</title>
+                <meta name="description" content="Baca artikel terbaru dari Toba Lawfirm." />
+            </Helmet>
             <Navbar />
             <div className="max-w-5xl mx-auto px-4 py-16 sm:py-24">
                 <header className="text-center mb-12">

@@ -30,7 +30,7 @@ export const ServicePage_2 = () => {
     cardTitle: "text-lg font-Playfair_Display",
     cardIcon:
       "p-5 w-fit grid place-items-center font-Playfair_Display font-bold rounded-tl-lg rounded-br-lg bg-yellow-500 text-black text-2xl",
-    cardSubtitle: `text-ellipsis h-fit transform transition-all duration-200 overflow-y-hidden text-[10px] text-white/60 `,
+    cardSubtitle: `text-ellipsis h-fit transform transition-all duration-200 overflow-y-hidden text-[15px] text-white/60 `,
   };
 
   const [services, setServices] = useState([]);

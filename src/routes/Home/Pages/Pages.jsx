@@ -16,7 +16,7 @@ export const HomePage_1 = () => {
     innerBox: "w-full space-y-8 text-white z-10",
     darkBox: "w-full h-full absolute backdrop-filter backdrop-grayscale",
     title: "text-4xl md:text-5xl font-bold",
-    subtitle: "text-sm text-white/60",
+    subtitle: "text-[15px] text-white/60",
     buttonBox: "flex items-center gap-2 font-Roboto",
     button1: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
     button2:
@@ -56,7 +56,7 @@ export const HomePage_2 = () => {
       "w-full h-full grid grid-cols-1 gap-10 md:grid-cols-2 place-items-center p-10",
     innerBox: "space-y-5 text-white order-2 md:order-1",
     title: "text-3xl md:text-4xl font-Playfair_Display font-bold",
-    subtitle: "text-xs text-white/60 whitespace-pre-line",
+    subtitle: "text-[15px] text-white/60 whitespace-pre-line",
     button: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
     img: "grayscale h-auto md:h-[500px] rounded-lg order-1 md:order-2",
   };
@@ -87,23 +87,24 @@ export const HomePage_2 = () => {
 export const HomePage_3 = () => {
   const className = {
     container: "w-full p-10 space-y-16 bg-dark-gray font-Roboto text-white",
-    headerBox: "w-full text-center",
+    headerBox: "w-full text-start",
+    headerBox2: "w-full text-center",
     title:
       "text-3xl md:text-4xl font-Playfair_Display font-medium px-5 md:px-0",
-    subtitle: "text-xs text-white/60",
+    subtitle: "text-[15px] text-white/60",
 
     cardBox: "w-full grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center",
     card: "p-5 flex flex-col items-center text-center gap-5",
     cardIcon: "text-4xl",
     cardTitle: "text-xl md:text-2xl font-medium font-Playfair_Display",
-    cardSubtitle: "text-[10px] text-white/60",
+    cardSubtitle: "text-[14px] text-white/60",
   };
 
   const Data = Datas.page_3;
 
   return (
     <div className={className.container}>
-      <div className={className.headerBox}>
+      <div className={className.headerBox2}>
         <h1 className={className.title}>{Data.title}</h1>
       </div>
 
@@ -118,7 +119,7 @@ export const HomePage_3 = () => {
       </div>
 
       <div className={className.headerBox}>
-        <p className={className.subtitle}>{Data.subtitle}</p>
+        <p className={className.subtitle}>*{Data.subtitle}</p>
       </div>
     </div>
   );

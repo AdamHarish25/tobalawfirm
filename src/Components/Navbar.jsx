@@ -100,13 +100,6 @@ const Navbar = () => {
               >
                 Login
               </Link>
-                /
-              <Link
-                className="text-white/70 hover:text-white text-sm mx-2 hover:underline"
-                to="/register"
-              >
-                Register
-              </Link>
             </p>
           </div>
         </div>
@@ -127,7 +120,7 @@ const Navbar = () => {
               setIsOpen(!isOpen);
             }}
             className={`${className.sidebarMenu}
-              ${path === `/#${data.link}` ? "text-blue-600" : ""}`}
+              ${path === `/#${data.link}` ? "text-yellow-500" : ""}`}
           >
             {data.title}
           </li>

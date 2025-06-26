@@ -1,22 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css'; // <-- This is correct.
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css"; // <-- This is correct.
+import App from "./App";
 // import reportWebVitals from './reportWebVitals';
-import {HashRouter as Router} from 'react-router-dom';
-import { AuthProvider } from './routes/CORE/AuthProvider';
+import { HashRouter as Router } from "react-router-dom";
+import { AuthProvider } from "./routes/CORE/AuthProvider";
+import { HelmetProvider } from "react-helmet-async";
 // import axios from 'axios';
 
 // axios.defaults.withCredentials = true;
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router hashType="noslash">
-      <AuthProvider>
-        <App />
-      </AuthProvider>
-    </Router>
+    <HelmetProvider>
+      <Router hashType="noslash">
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </Router>
+    </HelmetProvider>
   </React.StrictMode>
 );
 

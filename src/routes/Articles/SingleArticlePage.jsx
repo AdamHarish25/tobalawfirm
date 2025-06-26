@@ -9,6 +9,7 @@ import { db } from "../../firebase"; // Ensure path is correct
 import { FaFacebook, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { Helmet } from "react-helmet-async";
 
 function SingleArticlePage() {
   const { slug } = useParams();
@@ -59,6 +60,24 @@ function SingleArticlePage() {
     fetchArticleBySlug();
   }, [slug]); // This effect re-runs whenever the URL slug changes
 
+   if (loading) {
+    return (
+      <>
+        <Helmet><title>Loading...</title></Helmet>
+        <div className="min-h-screen ...">Loading article...</div>
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Helmet><title>Error - Toba Lawfirm</title></Helmet>
+        <div className="min-h-screen ...">{error}</div>
+      </>
+    );
+  }
+
   // --- RENDER STATES ---
 
   // === THIS IS THE CRITICAL DEBUGGING STEP ===
@@ -97,6 +116,15 @@ function SingleArticlePage() {
 
   return (
     <main className="bg-dark-white h-screen text-gray-300 font-Roboto overflow-y-auto">
+      <Helmet>
+        <title>{`${article.title} - Toba Lawfirm`}</title>
+        {/* We can also set the meta description from the article content! */}
+        {/* This is great for SEO. We'll take the first 155 chars of the content. */}
+        <meta 
+          name="description" 
+          content={article.content.replace(/<[^>]+>/g, '').substring(0, 155)} 
+        />
+      </Helmet>
       <Navbar />
       <div className="max-w-4xl h-auto mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 ">
         {/* --- HEADER --- */}

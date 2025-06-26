@@ -43,7 +43,7 @@ export const TeamPage_3 = () => {
   const className = {
     container:
       "w-full p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center bg-dark-gray",
-    card: "md:w-full space-y-10 grid md:place-items-center gap-5 p-5",
+    card: "md:w-full space-y-10 grid place-items-center gap-5 p-5",
     innerBox: "space-y-4 text-center",
     img: "w-60 h-60 rounded-full object-cover object-top",
     title: "text-2xl md:text-3xl font-semibold font-Playfair_Display",
