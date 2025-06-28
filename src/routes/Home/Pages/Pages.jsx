@@ -239,7 +239,7 @@ export const HomePage_7 = () => {
     container: "w-full p-10 lg:p-20 text-center bg-dark-gray text-white space-y-8",
     title: "text-3xl md:text-4xl font-bold font-Playfair_Display",
     subtitle: "max-w-2xl mx-auto text-gray-300", // Deskripsi singkat
-    button: "inline-block bg-yellow-500 text-black text-black font-bold text-lg py-4 px-8 rounded hover:bg-yellow-400 transition-colors duration-300",
+    button: "inline-block bg-yellow-500 text-black font-bold text-lg py-4 px-8 rounded hover:bg-yellow-400 transition-colors duration-300",
   };
 
   const Data = Datas.page_7;
