@@ -6,6 +6,7 @@ import hammer from '../Attachments/Image/judgesHammer.jpg';
 import secretary from '../Attachments/Image/noteTaker.jpg';
 import background from '../Attachments/Image/background.jpg';
 
+
 import handshaking from '../Attachments/Image/businessmenShakingHands.jpg';
 
 import hourglass from '../Attachments/Image/hourglass.jpg';
@@ -52,7 +53,7 @@ export const Database = {
     contact: {
       title: "Kontak",
       address:
-        "Graha Mustika Ratu; Jalan Gatot Subroto No.1 Menteng Dalam, lantai 6, RT.2/RW.1, Menteng Dalam, Tebet, South Jakarta City, Jakarta 12780",
+        "Madison Square SHC 2/51 kota wisata, Gn. putri, Bogor, Jawa Barat 16720",
       list: [
         {
           title: "+62-858-1116-5429",
@@ -111,7 +112,7 @@ export const Database = {
     page_1: {
       title: "Penuhi semua kebutuhan investigasi dan litigasi Anda",
       subtitle:
-        "Kantor Hukum kami terdiri dari tim advokat & legal consultant mempunyai berintegritas yang mampu dan berpengalaman menangani berbagai perkara hukum.",
+        "Kantor Hukum kami terdiri dari tim advokat & legal consultant mempunyai integritas tinggi yang mampu dan berpengalaman menangani berbagai perkara hukum.",
       button: [
         {
           link: "/Service",
@@ -126,9 +127,13 @@ export const Database = {
 
     page_2: {
       title: "Tentang Kami",
-      subtitle: `Kantor Hukum kami terdiri dari tim advokat & legal consultant mempunyai berintegritas yang mampu dan berpengalaman menangani berbagai perkara hukum. 
-        
-        Pendekatan yang digunakan dalam menyelesaikan setiap masalah selalu berpedoman pada Undang - Undang dan Ketentuan Hukum yang mengatur pada setiap bidang. Selain itu kami juga memberikan pelatihan kepada advokat maupun masyarakat tentang hukum. `,
+      subtitle: `Toba Law Firm adalah lembaga konsultan hukum yang didirikan pada tahun 2024 dengan visi dan misi untuk memberikan bantuan hukum yang berkualitas dan profesional kepada individu dan perusahaan yang menghadapi kesulitan hukum. Kami percaya bahwa setiap orang berhak mendapatkan keadilan dan perlindungan hukum yang sama, dan kami berkomitmen untuk memberikan layanan hukum yang terbaik kepada klien kami.
+
+Dengan tim pengacara yang berpengalaman dan berdedikasi, Toba Law Firm siap membantu klien kami dalam menyelesaikan kasus hukum yang kompleks dan memberikan solusi yang efektif dan efisien. Kami memiliki keahlian dalam berbagai bidang hukum, termasuk litigasi, kontrak, dan hukum bisnis, dan kami siap untuk memberikan bantuan hukum yang tepat kepada klien kami.
+
+Kami memahami bahwa setiap kasus hukum memiliki keunikan dan kompleksitas tersendiri, dan kami berkomitmen untuk memberikan perhatian yang personal dan profesional kepada setiap klien kami. Kami percaya bahwa dengan kerja sama yang erat antara klien dan pengacara, kami dapat mencapai hasil yang terbaik dan memberikan keadilan kepada klien kami.
+
+Toba Law Firm adalah mitra yang dapat diandalkan bagi individu dan perusahaan yang membutuhkan bantuan hukum yang berkualitas dan profesional. Kami siap untuk membantu Anda dalam menyelesaikan kasus hukum Anda dan memberikan solusi yang efektif dan efisien. Hubungi kami hari ini untuk mengetahui lebih lanjut tentang bagaimana kami dapat membantu Anda.`,
       button: {
         link: "/Service",
         title: "Layanan Kami",
@@ -338,16 +343,20 @@ export const Database = {
     },
 
     page_2: {
-      title: "Kami Adalah",
-      subtitle: `Kantor Hukum terdiri dari tim advokat & legal consultant mempunyai berintegritas yang mampu dan berpengalaman menangani berbagai perkara hukum. 
-        
-        Pendekatan yang digunakan dalam menyelesaikan setiap masalah selalu berpedoman pada Undang - Undang dan Ketentuan Hukum yang mengatur pada setiap bidang. Selain itu kami juga memberikan pelatihan kepada advokat maupun masyarakat tentang hukum. `,
+      title: "About Us",
+      subtitle: `Toba Law Firm adalah lembaga konsultan hukum yang didirikan pada tahun 2024 dengan visi dan misi untuk memberikan bantuan hukum yang berkualitas dan profesional kepada individu dan perusahaan yang menghadapi kesulitan hukum. Kami percaya bahwa setiap orang berhak mendapatkan keadilan dan perlindungan hukum yang sama, dan kami berkomitmen untuk memberikan layanan hukum yang terbaik kepada klien kami.
+
+Dengan tim pengacara yang berpengalaman dan berdedikasi, Toba Law Firm siap membantu klien kami dalam menyelesaikan kasus hukum yang kompleks dan memberikan solusi yang efektif dan efisien. Kami memiliki keahlian dalam berbagai bidang hukum, termasuk litigasi, kontrak, dan hukum bisnis, dan kami siap untuk memberikan bantuan hukum yang tepat kepada klien kami.
+
+Kami memahami bahwa setiap kasus hukum memiliki keunikan dan kompleksitas tersendiri, dan kami berkomitmen untuk memberikan perhatian yang personal dan profesional kepada setiap klien kami. Kami percaya bahwa dengan kerja sama yang erat antara klien dan pengacara, kami dapat mencapai hasil yang terbaik dan memberikan keadilan kepada klien kami.
+
+Toba Law Firm adalah mitra yang dapat diandalkan bagi individu dan perusahaan yang membutuhkan bantuan hukum yang berkualitas dan profesional. Kami siap untuk membantu Anda dalam menyelesaikan kasus hukum Anda dan memberikan solusi yang efektif dan efisien. Hubungi kami hari ini untuk mengetahui lebih lanjut tentang bagaimana kami dapat membantu Anda. `,
       button: {
         link: "/Service",
         title: "Layanan Kami",
       },
 
-      img: Profile,
+      img: teamMember3,
     },
 
     page_3: [
@@ -395,24 +404,20 @@ export const Database = {
     },
 
     page_2: {
-      paragraph: `Kami menyadari bahwa aset utama kami adalah orang. Agar berhasil, kami ingin tempat kami menjadi tempat yang bermanfaat untuk bekerja. Kami memberikan kesempatan dan dorongan untuk membantu orang-orang kami mencapai potensi mereka. Kami bekerja dengan klien atau pelanggan kami sebagai sebuah tim. Rasa saling menghormati memberikan landasan bagi keberhasilan Kami.`,
+      title: "About Us",
+      subtitle: `Toba Law Firm adalah lembaga konsultan hukum yang didirikan pada tahun 2024 dengan visi dan misi untuk memberikan bantuan hukum yang berkualitas dan profesional kepada individu dan perusahaan yang menghadapi kesulitan hukum. Kami percaya bahwa setiap orang berhak mendapatkan keadilan dan perlindungan hukum yang sama, dan kami berkomitmen untuk memberikan layanan hukum yang terbaik kepada klien kami.
 
-      tabs: [
-        {
-          id: 1,
-          tabTitle: "Integritas",
-          title: "Integritas(Integrity)",
-          content: `Kami tetap setia pada nilai-nilai pendirian kami tentang kualitas, kejujuran, dan kerja keras. Kami memiliki standar etika tertinggi. Kami "melakukan hal yang benar" INDO LEGAL SERVICES adalah organisasi yang dibangun berdasarkan kepercayaan. Oleh karena itu, kami secara konsisten bertujuan untuk memberikan standar layanan, kualitas, dan perhatian pribadi yang tertinggi kepada klien atau pelanggan.`,
-          img: handshaking,
-        },
-        {
-          id: 2,
-          tabTitle: "Komitmen",
-          title: "Komitmen(Commitment)",
-          content: `Kami proaktif dalam mencari solusi bagi pelanggan kami untuk membantu mereka mencapai tujuan mereka dengan cara sebaik mungkin. Hubungan yang langgeng adalah urat nadi bisnis kita. Selain itu, kami mengingini hubungan terbuka dengan karyawan kami berdasarkan rasa saling percaya, dan rasa hormat.`,
-          img: hourglass,
-        },
-      ],
+Dengan tim pengacara yang berpengalaman dan berdedikasi, Toba Law Firm siap membantu klien kami dalam menyelesaikan kasus hukum yang kompleks dan memberikan solusi yang efektif dan efisien. Kami memiliki keahlian dalam berbagai bidang hukum, termasuk litigasi, kontrak, dan hukum bisnis, dan kami siap untuk memberikan bantuan hukum yang tepat kepada klien kami.
+
+Kami memahami bahwa setiap kasus hukum memiliki keunikan dan kompleksitas tersendiri, dan kami berkomitmen untuk memberikan perhatian yang personal dan profesional kepada setiap klien kami. Kami percaya bahwa dengan kerja sama yang erat antara klien dan pengacara, kami dapat mencapai hasil yang terbaik dan memberikan keadilan kepada klien kami.
+
+Toba Law Firm adalah mitra yang dapat diandalkan bagi individu dan perusahaan yang membutuhkan bantuan hukum yang berkualitas dan profesional. Kami siap untuk membantu Anda dalam menyelesaikan kasus hukum Anda dan memberikan solusi yang efektif dan efisien. Hubungi kami hari ini untuk mengetahui lebih lanjut tentang bagaimana kami dapat membantu Anda. `,
+      button: {
+        link: "/Service",
+        title: "Layanan Kami",
+      },
+
+      img: handshaking,
     },
 
     page_3: [

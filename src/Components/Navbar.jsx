@@ -13,8 +13,8 @@ const Navbar = () => {
     mobile: "w-full flex items-center justify-between gap-10",
     desktop: "w-full grid grid-cols-3 place-items-center text-white gap-10",
     logo: "w-16 h-16 rounded-lg",
-    icon: "p-2 rounded-full bg-gray-500/70 text-base group-hover:bg-transparent group-hover:border border-white transform duration-200",
-    contactButton: "flex items-center gap-3 group text-xs",
+    icon: "p-3 rounded-full bg-gray-500/70 text-base group-hover:bg-transparent group-hover:border border-white transform duration-200",
+    contactButton: "flex items-center gap-3 group text-[15px]",
     triggerBox: "flex items-center gap-8 text-white",
 
     navigationList: "flex items-center gap-8 text-white/70",

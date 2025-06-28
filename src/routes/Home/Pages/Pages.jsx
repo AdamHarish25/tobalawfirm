@@ -12,11 +12,11 @@ const Datas = Database.HomeData;
 export const HomePage_1 = () => {
   const className = {
     container:
-      "w-full h-screen bg-background1 bg-top bg-blend-darken place-items-center bg-black/50 bg-cover grid grid-cols-1 lg:grid-cols-2 p-10 font-Playfair_Display relative",
+      "w-full h-screen bg-background2 bg-top bg-blend-darken place-items-center bg-black/50 bg-cover grid grid-cols-1 lg:grid-cols-2 p-10 font-Playfair_Display relative",
     innerBox: "w-full space-y-8 text-white z-10",
     darkBox: "w-full h-full absolute backdrop-filter backdrop-grayscale",
     title: "text-4xl md:text-5xl font-bold",
-    subtitle: "text-[15px] text-white/60",
+    subtitle: "text-white/80",
     buttonBox: "flex items-center gap-2 font-Roboto",
     button1: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
     button2:
@@ -54,9 +54,9 @@ export const HomePage_2 = () => {
   const className = {
     container:
       "w-full h-full grid grid-cols-1 gap-10 md:grid-cols-2 place-items-center p-10",
-    innerBox: "space-y-5 text-white order-2 md:order-1",
+    innerBox: "space-y-10 grid place-items-center text-justify text-white order-2 md:order-1",
     title: "text-3xl md:text-4xl font-Playfair_Display font-bold",
-    subtitle: "text-[15px] text-white/60 whitespace-pre-line",
+    subtitle: "text-white/60 whitespace-pre-line",
     button: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
     img: "grayscale h-auto md:h-[500px] rounded-lg order-1 md:order-2",
   };
@@ -91,7 +91,7 @@ export const HomePage_3 = () => {
     headerBox2: "w-full text-center",
     title:
       "text-3xl md:text-4xl font-Playfair_Display font-medium px-5 md:px-0",
-    subtitle: "text-[15px] text-white/60",
+    subtitle: "text-white/60",
 
     cardBox: "w-full grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center",
     card: "p-5 flex flex-col items-center text-center gap-5",

@@ -26,9 +26,9 @@ const ContactCard = ({ icon, title, text, link, buttonText }) => (
 );
 
 function ContactPage() {
-  const address = "Graha Mustika Ratu; Jalan Gatot Subroto No.1 Menteng Dalam, lantai 6, RT.2/RW.1, Menteng Dalam, Tebet, South Jakarta City, Jakarta 12780";
+  const address = "Madison Square SHC 2/51 kota wisata, Gn. putri, Bogor, Jawa Barat 16720";
   // The google maps embed URL for your address
-  const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.164328351821!2d106.8396407737406!3d-6.24206216112004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3bf5252f3af%3A0x1f27e45b12c0e6d6!2sGraha%20Mustika%20Ratu!5e0!3m2!1sen!2sid!4v1694925856058!5m2!1sen!2sid`;
+  const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.8331064186213!2d106.96137559664943!3d-6.351343323943316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1751106576584!5m2!1sen!2sid`;
   
   return (
     <div className="bg-dark-white min-h-screen text-white font-Roboto">

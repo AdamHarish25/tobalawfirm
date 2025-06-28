@@ -35,6 +35,7 @@ export default {
       },
       backgroundImage: {
         background1: "url(./Attachments/Image/background.jpg)",
+        background2: "url(./Attachments/Image/hourglass.jpg)",
       },
     },
   },

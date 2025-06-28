@@ -18,8 +18,8 @@ const Team = () => {
         />
       </Helmet>
       <Navbar />
-      <TeamPage_1 />
       <TeamPage_2 />
+      <TeamPage_1 />
       <TeamPage_3 />
       <Footer />
     </div>

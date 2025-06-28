@@ -1,12 +1,13 @@
+import { FaChevronRight } from "react-icons/fa";
 import Tabs from "../../../Components/Tabs/Tabs";
 import { Database } from "../../../Database/WholeData";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Datas = Database.TeamData;
 
 export const TeamPage_1 = () => {
   const className = {
-    container: "w-full p-32 text-center bg-dark-gray",
+    container: "w-full p-20 text-center bg-dark-gray",
     title: "text-3xl font-Playfair_Display font-medium",
   };
 
@@ -21,20 +22,34 @@ export const TeamPage_1 = () => {
 
 export const TeamPage_2 = () => {
   const className = {
-    container: "w-full p-10 space-y-10",
-    headerBox: "w-full text-center",
-    paragraph: "text-white/60",
+    container:
+      "w-full h-full grid grid-cols-1 gap-10 md:grid-cols-2 place-items-center px-10 py-44",
+    innerBox: "space-y-10 grid place-items-center text-justify text-white order-2 md:order-1",
+    title: "text-3xl md:text-4xl font-Playfair_Display font-bold",
+    subtitle: " text-white/60 whitespace-pre-line",
+    button: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
+    img: "grayscale h-auto md:h-[500px] rounded-lg order-1 md:order-2",
   };
 
   const Data = Datas.page_2;
 
+  const navigateTo = useNavigate();
+
   return (
     <div className={className.container}>
-      <div className={className.headerBox}>
-        <p className={className.paragraph}>{Data.paragraph}</p>
+      <div className={className.innerBox}>
+        <h1 className={className.title}>{Data.title}</h1>
+        <p className={className.subtitle}>{Data.subtitle}</p>
+
+        <button
+          onClick={() => navigateTo(Data.button.link)}
+          className={className.button}
+        >
+          <p>{Data.button.title}</p> <FaChevronRight />
+        </button>
       </div>
 
-      <Tabs tabs={Data.tabs} />
+      <img src={Data.img} alt="" className={className.img} />
     </div>
   );
 };

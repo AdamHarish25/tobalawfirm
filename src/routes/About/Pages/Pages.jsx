@@ -24,9 +24,9 @@ export const AboutPage_2 = () => {
   const className = {
     container:
       "w-full h-full grid grid-cols-1 gap-10 md:grid-cols-2 place-items-center p-10",
-    innerBox: "space-y-5 text-white order-2 md:order-1",
+    innerBox: "space-y-10 grid place-items-center text-justify text-white order-2 md:order-1",
     title: "text-3xl md:text-4xl font-Playfair_Display font-bold",
-    subtitle: "text-[15px] text-white/60 whitespace-pre-line",
+    subtitle: " text-white/60 whitespace-pre-line",
     button: "flex items-center text-xs gap-5 bg-yellow-500 text-black rounded-sm p-3",
     img: "grayscale h-auto md:h-[500px] rounded-lg order-1 md:order-2",
   };
