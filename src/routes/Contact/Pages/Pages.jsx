@@ -34,7 +34,7 @@ function ContactPage() {
     <div className="bg-dark-white min-h-screen text-white font-Roboto">
 
       {/* --- HEADER --- */}
-      <header className="w-full text-center py-24 bg-dark-gray">
+      <header className="w-full text-center py-36 bg-dark-gray">
         <h1 className="text-3xl md:text-4xl font-bold font-Playfair_Display">Kontak Kami</h1>
         <p className="text-lg text-gray-400 mt-4">Kami disini untuk membantu Anda. Hubungi kami kapan saja, tanpa biaya.</p>
       </header>
@@ -85,7 +85,7 @@ function ContactPage() {
         </div>
         
         {/* --- SOCIAL MEDIA SECTION --- */}
-        <div className="text-center mt-20 pt-12 border-t border-gray-800">
+        {/* <div className="text-center mt-20 pt-12 border-t border-gray-800">
           <h2 className="text-3xl font-semibold font-Playfair_Display text-white mb-6">Ikuti Kami di Media Sosial</h2>
           <div className="flex justify-center items-center gap-6">
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-4 bg-dark-gray rounded-full text-gray-400 hover:text-white hover:bg-red-600 transition-colors duration-300">
@@ -98,7 +98,7 @@ function ContactPage() {
               <FaInstagram size={28} />
             </a>
           </div>
-        </div>
+        </div> */}
 
       </div>
 

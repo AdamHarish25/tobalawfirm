@@ -128,10 +128,10 @@ export const HomePage_3 = () => {
 export const HomePage_4 = () => {
   const className = {
     container: "w-full space-y-8 text-white p-10",
-    title: "text-3xl md:text-4xl font-medium font-Playfair_Display pl-5",
+    title: "text-3xl md:text-4xl font-medium font-Playfair_Display md:pl-5",
     gridBox:
       "p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-20 w-full",
-    flexBox: "w-full flex items-center gap-10 justify-between",
+    flexBox: "w-full flex xs:flex-col gap-10 xs:items-start xs:justify-center lg:flex-row lg:items-center lg:justify-between",
     button:
       "px-4 py-2 rounded-lg border border-white hover:text-black hover:bg-white flex items-center gap-4 text-xs",
 

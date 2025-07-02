@@ -50,7 +50,7 @@ function ArticleListPage() {
             </Helmet>
             <Navbar />
             <div className="max-w-5xl mx-auto px-4 py-16 sm:py-24">
-                <header className="text-center mb-12">
+                <header className="text-center mt-20 mb-12">
                     <h1 className="text-5xl font-bold font-Playfair_Display">Articles</h1>
                     <p className="text-lg text-gray-400 mt-2">Insights from Toba Lawfirm</p>
                 </header>
