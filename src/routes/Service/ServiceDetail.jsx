@@ -8,6 +8,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import image from "../../Attachments/Image/backgroundService.jpg"; // Adjust the path as necessary
 import { Helmet } from "react-helmet-async";
+import Poster from "../../Attachments/Image/Poster.png";
 
 function ServiceDetailPage() {
   const { slug } = useParams();
@@ -46,23 +47,27 @@ function ServiceDetailPage() {
     fetchServiceBySlug();
   }, [slug]);
 
-   if (loading) {
-      return (
-        <>
-          <Helmet><title>Loading...</title></Helmet>
-          <div className="min-h-screen ...">Loading service...</div>
-        </>
-      );
-    }
-  
-    if (error) {
-      return (
-        <>
-          <Helmet><title>Error - Toba Lawfirm</title></Helmet>
-          <div className="min-h-screen ...">{error}</div>
-        </>
-      );
-    }
+  if (loading) {
+    return (
+      <>
+        <Helmet>
+          <title>Loading...</title>
+        </Helmet>
+        <div className="min-h-screen ...">Loading service...</div>
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Helmet>
+          <title>Error - Toba Lawfirm</title>
+        </Helmet>
+        <div className="min-h-screen ...">{error}</div>
+      </>
+    );
+  }
 
   if (loading) {
     return (
@@ -119,6 +124,17 @@ function ServiceDetailPage() {
               className="inline-block bg-yellow-500 text-black font-bold text-lg py-4 px-8 rounded hover:bg-yellow-400 transition-colors"
             >
               Mulai Konsultasi dengan kami Gratis!
+            </Link>
+          </div>
+
+          <div className="mt-8 text-center space-y-5 grid place-items-center">
+            <h2 className="text-2xl font-bold">Mungkin kamu juga tertarik</h2>
+            <Link to={"https://wa.me/628111072535"}>
+              <img
+                src={Poster}
+                alt="Disponsori"
+                className="rounded-3xl border-2 border-yellow-500 xs:h-auto md:h-[600px]"
+              />
             </Link>
           </div>
         </div>
