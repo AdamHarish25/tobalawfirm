@@ -10,6 +10,7 @@ import image from "../../Attachments/Image/backgroundService.jpg"; // Adjust the
 import { Helmet } from "react-helmet-async";
 import Poster from "../../Attachments/Image/Poster2.png";
 import ImageModal from "../../Components/ImageModal";
+import { FaWhatsapp } from "react-icons/fa";
 
 function ServiceDetailPage() {
   const { slug } = useParams();
@@ -114,9 +115,6 @@ function ServiceDetailPage() {
           </div>
         </header>
 
-
-
-
         {/* Content Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <article
@@ -136,31 +134,49 @@ function ServiceDetailPage() {
 
           <div className="mt-8 text-center space-y-5 grid grid-cols-1 place-items-center">
             <h2 className="text-2xl font-bold">Mungkin kamu juga tertarik</h2>
-            <Link to={waMe}>
-              <img
-                src={Poster}
-                alt="Disponsori"
-                className="rounded-3xl border-2 border-yellow-500 xs:h-auto md:h-[600px]"
-              />
-            </Link>
+            <div className="relative group">
+              <Link to={waMe}>
+                <img
+                  src={Poster}
+                  alt="Disponsori"
+                  className="rounded-3xl border-2 border-yellow-500 xs:h-auto md:h-[600px]"
+                />
+              </Link>
+              <div
+                className="
+              absolute inset-0 flex items-center justify-center 
+              bg-black/50 opacity-0 group-hover:opacity-100 
+              transition-opacity duration-300 pointer-events-none
+            "
+              >
+                <div className="text-center text-white p-6 bg-dark-gray rounded-lg shadow-lg">
+                  <FaWhatsapp
+                    size={40}
+                    className="mx-auto mb-3 text-green-400"
+                  />
+                  <p className="font-semibold text-lg">
+                    Klik untuk Konsultasi via WhatsApp
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {Poster && (
-            <div className="text-center -mt-8 mb-16">
+              <div className="text-center -mt-8 mb-16">
                 <button
-                    onClick={() => setIsModalOpen(true)}
-                    className="bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg shadow-lg hover:bg-yellow-400 transition-colors"
+                  onClick={() => setIsModalOpen(true)}
+                  className="bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg shadow-lg hover:bg-yellow-400 transition-colors"
                 >
-                    Lihat Gambar Selengkapnya
+                  Lihat Gambar Selengkapnya
                 </button>
-            </div>
-        )}
+              </div>
+            )}
           </div>
         </div>
       </main>
       <Footer />
 
-
-       <ImageModal
+      <ImageModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         imageUrl={Poster}
