@@ -30,6 +30,8 @@ function ContactPage() {
   // The google maps embed URL for your address
   const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.8331064186213!2d106.96137559664943!3d-6.351343323943316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1751106576584!5m2!1sen!2sid`;
   
+  const waMe = "https://wa.me/6285811165429";
+  
   return (
     <div className="bg-dark-white min-h-screen text-white font-Roboto">
 
@@ -49,7 +51,7 @@ function ContactPage() {
               icon={<FaWhatsapp size={24} />}
               title="Hubungi Kami via WhatsApp"
               text="Dapatkan respons cepat untuk pertanyaan Anda. Kami tersedia selama jam kerja."
-              link="https://wa.me/6285811165429" // Use your primary WhatsApp number
+              link={waMe} // Use your primary WhatsApp number
               buttonText="Chat Sekarang"
             />
             <ContactCard 

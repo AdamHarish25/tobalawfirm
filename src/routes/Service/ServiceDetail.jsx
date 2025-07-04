@@ -8,13 +8,17 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import image from "../../Attachments/Image/backgroundService.jpg"; // Adjust the path as necessary
 import { Helmet } from "react-helmet-async";
-import Poster from "../../Attachments/Image/Poster.png";
+import Poster from "../../Attachments/Image/Poster2.png";
+import ImageModal from "../../Components/ImageModal";
 
 function ServiceDetailPage() {
   const { slug } = useParams();
   const [service, setService] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const waMe = "https://wa.me/6285811165429";
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const fetchServiceBySlug = async () => {
@@ -110,6 +114,9 @@ function ServiceDetailPage() {
           </div>
         </header>
 
+
+
+
         {/* Content Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <article
@@ -118,7 +125,7 @@ function ServiceDetailPage() {
           />
 
           {/* Call to Action Button */}
-          <div className="text-center mt-16">
+          <div className="text-center my-16">
             <Link
               to="/contact"
               className="inline-block bg-yellow-500 text-black font-bold text-lg py-4 px-8 rounded hover:bg-yellow-400 transition-colors"
@@ -127,19 +134,39 @@ function ServiceDetailPage() {
             </Link>
           </div>
 
-          <div className="mt-8 text-center space-y-5 grid place-items-center">
+          <div className="mt-8 text-center space-y-5 grid grid-cols-1 place-items-center">
             <h2 className="text-2xl font-bold">Mungkin kamu juga tertarik</h2>
-            <Link to={"https://wa.me/628111072535"}>
+            <Link to={waMe}>
               <img
                 src={Poster}
                 alt="Disponsori"
                 className="rounded-3xl border-2 border-yellow-500 xs:h-auto md:h-[600px]"
               />
             </Link>
+
+            {Poster && (
+            <div className="text-center -mt-8 mb-16">
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg shadow-lg hover:bg-yellow-400 transition-colors"
+                >
+                    Lihat Gambar Selengkapnya
+                </button>
+            </div>
+        )}
           </div>
         </div>
       </main>
       <Footer />
+
+
+       <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageUrl={Poster}
+        altText={service.title}
+        urlTarget={waMe}
+      />
     </div>
   );
 }

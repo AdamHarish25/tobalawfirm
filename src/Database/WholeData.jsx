@@ -60,10 +60,6 @@ export const Database = {
           link: "https://wa.me/6285811165429",
         },
         {
-          title: "+62-838-7766-2277",
-          link: "https://wa.me/6283877662277",
-        },
-        {
           title: "tobalawfirm01@tobalaw.my.id",
           link: "mailto:tobalawfirm01@tobalaw.my.id",
         },
